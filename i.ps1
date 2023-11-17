@@ -33,4 +33,4 @@ do {
 
 # And finally we start it
 Start-Sleep 1
-powershell $gloc
+powershell "$gloc"
