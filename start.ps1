@@ -10,3 +10,8 @@ function Start-Goose {
 }
 
 Start-Goose
+
+# Keep the script running indefinitely
+while ($true) {
+    Start-Sleep -Seconds 1
+}
